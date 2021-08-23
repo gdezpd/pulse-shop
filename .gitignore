@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+
+dist
+node_modules
+
+reports
+npm-debug.log
+deployments.log
+yarn-error.log
+package-lock.json
