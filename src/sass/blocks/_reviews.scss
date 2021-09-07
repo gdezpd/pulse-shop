@@ -1,0 +1,37 @@
+  .reviews {
+    padding-bottom: 71px;
+    &__people {
+      margin: 70px 0 100px 0;
+      display: flex;
+    }
+    &__img {
+      width: 169px;
+      height: 169px;
+    }
+    &__text {
+      margin: 0 62px;
+    }
+    &__name {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 700;
+      text-align: left;
+      color: #0d0d0d;
+    }
+    &__title {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 12px;
+      text-align: left;
+      color: #646464;
+    }
+    &__subtitle {
+      margin-top: 19px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18px;
+      text-align: left;
+      color: #0d0d0d;
+    }
+  }
