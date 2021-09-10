@@ -11,6 +11,30 @@
   .consultation {
     padding: 20px;
   }
+  .catalog {
+    &__tabs{
+      margin-top: 30px;
+    }
+    &__tab{
+      margin-bottom: 10px;
+    }
+    &-item{
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .reviews {
+    &__people {
+      margin: 50px 0 50px 40px;
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
 }
 @media (max-width: 960px) {
   .promo {
@@ -37,18 +61,18 @@
     &__official {
       font-size: 18px;
       width: 50%;
-
     }
     &__contacts {
       margin-top:20px;
       width: 50%;
       align-items: center ;
     }
+  }
 
-    }
   .promo {
     padding: 20px 20px;
   }
+
   .advantages {
     &__wrapper {
       flex-direction: column;
@@ -63,6 +87,7 @@
         height: 90px;
       }
     }
+
   .subtitle {
     font-size: 24px
   }
@@ -70,6 +95,7 @@
       font-size: 18px;
     }
   }
+
   .consultation{
     min-height: 630px;
     .title__left{
@@ -87,6 +113,53 @@
     }
     .button_submit{
       width: 300px;
+    }
+  }
+
+  .catalog {
+    padding-bottom: 20px;
+    .title {
+      font-size: 36px;
+    }
+    &__tabs{
+      margin-top: 30px;
+      flex-direction: column;
+    }
+    &__tab{
+      width: 340px;
+      margin-bottom: 10px;
+    }
+    &__content {
+      padding: 1px
+    }
+    &-item{
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .reviews {
+    .title {
+      font-size: 36px;
+    }
+    &__people {
+      flex-direction: column;
+      margin: 50px 0 50px 0;
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+      }
+    }
+    &__text {
+      margin-top: 20px;
+    }
+    &__name {
+      text-align: center;
+    }
+    &__subtitle {
+      background-color: #e8e8e8;
     }
   }
   }
@@ -160,7 +233,7 @@
     padding: 30px 10px 20px 10px;
     .title__left {
       font-size: 27px;
-    }
+    }1px
     &__descr {
       margin-top: 20px;
     }
@@ -178,4 +251,47 @@
   //.carousel {
   //  max-width: 100%;
   //}
+
+  .catalog {
+    padding-bottom: 20px;
+    .title {
+      font-size: 20px;
+    }
+    &__tabs{
+      margin-top: 30px;
+      flex-direction: column;
+    }
+    &__tab{
+      margin-bottom: 10px;
+    }
+    &-item{
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .reviews {
+    .title {
+      font-size: 20px;
+    }
+    &__people {
+      flex-direction: column;
+      margin: 50px 0 50px 0;
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+      }
+    }
+    &__text {
+      margin-top: 20px;
+    }
+    &__name {
+      text-align: center;
+    }
+    &__subtitle {
+      background-color: #e8e8e8;
+    }
+  }
 }
