@@ -11,14 +11,14 @@
   .consultation {
     padding: 20px;
   }
-  .catalog {
-    &__tabs{
+  .catalog  {
+    &__tabs {
       margin-top: 30px;
     }
-    &__tab{
+    &__tab {
       margin-bottom: 10px;
     }
-    &-item{
+    &-item {
       margin: 0 auto;
       margin-bottom: 20px;
     }
@@ -254,19 +254,34 @@
 
   .catalog {
     padding-bottom: 20px;
+    &__content {
+      padding: 5px;
+    }
+    hr {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
     .title {
       font-size: 20px;
     }
-    &__tabs{
+    &__tabs {
       margin-top: 30px;
       flex-direction: column;
     }
-    &__tab{
+    &__tab {
       margin-bottom: 10px;
+      width: 200px;
+      font-size: 15px;
     }
-    &-item{
+    &-item {
       margin: 0 auto;
       margin-bottom: 20px;
+    }
+    &-item__pries {
+      font-size: 15px;
+    }
+    button {
+      width: 115px;
     }
   }
 
@@ -285,13 +300,29 @@
       }
     }
     &__text {
-      margin-top: 20px;
+      margin: 20px 25px 0 25px;
     }
     &__name {
       text-align: center;
     }
     &__subtitle {
       background-color: #e8e8e8;
+    }
+  }
+  .footer {
+    &__info {
+      width: 100%;
+      height: 200px;
+      padding: 30px 10px 10px 10px;
+    }
+    &__addr {
+      margin-bottom: 20px;
+    }
+    &__phone {
+      margin-bottom: 20px;
+    }
+    &__social {
+      width: 245px;
     }
   }
 }
