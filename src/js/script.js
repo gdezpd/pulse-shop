@@ -6,6 +6,7 @@ $(document).ready(function(){
         nextArrow:"<button type=\"button\" class=\"slick-next\"> <img src='icons/chevron_right.png'> </button>",
         responsive: [
             {
+                adaptiveHeight: false,
                 breakpoint: 540,
                 settings: {
                     dots: false,
@@ -49,5 +50,55 @@ $(document).ready(function(){
 
     toggleslide(".catalog-item__link")
     toggleslide(".catalog-item__back")
+
+    // Modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+
+    $('.button_mini').each(function(i){
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 5
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символов!")
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свю почту",
+                    email: "Неправильно введен адрес почты",
+                }
+            }
+        });
+    }
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+375(99) 999-99-99");
 });
+
 

@@ -181,6 +181,27 @@
       background-color: #e8e8e8;
     }
   }
+
+  .modal {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 70px;
+    &__close {
+      top: 23px;
+      right: 30px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    .feed-form {
+      width: 100%;
+      padding: 30px;
+    }
+  }
   }
 @media (max-width: 545px) {
   .promo {
@@ -346,6 +367,22 @@
     }
     &__social {
       width: 245px;
+    }
+  }
+
+  .modal {
+    padding-top: 70px;
+    &__subtitle {
+      font-size: 12px;
+    }
+    &__descr {
+      font-size: 10px;
+    }
+    .feed-form {
+      padding: 10px;
+    }
+    .button {
+      font-size: 13px;
     }
   }
 }
