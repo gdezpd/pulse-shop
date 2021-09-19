@@ -34,5 +34,14 @@
             }
         }
     }
+    &__icon {
+        &_animated {
+            animation: heardbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+
 
 }
