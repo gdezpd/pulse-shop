@@ -5,6 +5,8 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const rename = require("gulp-rename");
+const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
 
 gulp.task('server', function () {
 
