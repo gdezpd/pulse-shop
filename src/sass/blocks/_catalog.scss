@@ -110,6 +110,7 @@
       &__wrapper {
         display: flex;
         width: calc(200% + 40px);
+        min-height: 400px;
       }
       &__content {
         width: 50%;
@@ -154,7 +155,6 @@
       }
       &__back {
         position: absolute;
-        bottom: 0;
         left: 50%;
         transform: translateX(calc(-50% - 19px));
         display: block;
